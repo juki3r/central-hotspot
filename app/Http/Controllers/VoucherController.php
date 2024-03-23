@@ -39,7 +39,7 @@ class VoucherController extends Controller
         // }else{
         //     return redirect()->back()->with('status', 'Sorry No Voucher Available');
         // }
-        echo $request->voucher_search;
+        echo "hello";
         
     }
    
