@@ -105,10 +105,10 @@
                             </h1>
                         </div>
                         <div class="card-body">
-                            <div class="responsive-table">
+                            <div class="table-responsive">
                                 <form action="{{route('sell')}}" method="post">
                                     @csrf
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered table-sm text-nowrap">
                                         <tr>
                                             <th>Price</th>
                                             <th>Voucher</th>
