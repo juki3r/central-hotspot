@@ -114,7 +114,7 @@
                                             <th>Voucher</th>
                                         </tr>
                                         <tr>
-                                            <td class="mt-2 p-2">&#8369; {{$voucher_price}} . 00</td>                                       
+                                            <td class="mt-2 p-3">&#8369; {{$voucher_price}} . 00</td>                                       
                                             <td><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
