@@ -118,10 +118,7 @@
                                             <td class="p-2"><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
-                                    <x-primary-button class="mt-3" type="submit"  onclick=
-                                    "return confirm('Dapat napa-picture mo sa customer ang voucher o napasulat mo sa iya.')">
-                                        Sell
-                                    </x-primary-button>
+                                    <x-primary-button class="mt-3" type="submit"  onclick="return confirm('Dapat napa-picture mo sa customer ang voucher o napasulat mo sa iya.')">Sell</x-primary-button>
                                     <p class="mt-4">Palihog pa-picture sa customer iya voucher or ipasulat. Salamat.</p>
                                 </form>
                             </div>
