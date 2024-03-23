@@ -111,7 +111,7 @@
                                     <table class="table table-bordered table-sm text-nowrap">
                                         <tr>
                                             <th>Price</th>
-                                            <th>Voucher</th>
+                                            <th>Vouchers</th>
                                         </tr>
                                         <tr>
                                             <td>&#8369; {{$voucher_price}} . 00</td>                                       
