@@ -15,12 +15,15 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <style>
+        body{
+            background-color: black;
+        }
         #logo{
-            width: 300px;
+            width: 330px;
         }
         @media screen and (max-width:700px){
             #logo{
-                width: 150px;
+                width: 180px;
             }
         }
     </style>
