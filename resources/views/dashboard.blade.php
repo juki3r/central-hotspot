@@ -27,7 +27,7 @@
                         </div>
                         <div class="card-body">
                             <div class="responsive-table">
-                                <table class="table table-bordered table-sm tex-nowrap" id="sortTable">
+                                <table class="table table-bordered table-sm text-nowrap" id="sortTable">
                                     <thead class="fs-5">
                                         <td>Voucher</td>
                                         <td>Price</td>
