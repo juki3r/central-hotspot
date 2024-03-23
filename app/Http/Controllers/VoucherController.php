@@ -33,12 +33,13 @@ class VoucherController extends Controller
         $request->validate([
             'voucher_search' => 'required'
         ]);
-        $not_used = Voucher::where('is_it_used', null)->where('price', $request->voucher_search)->get();
-        if(isset($not_used[0])){
-            return view('dashboard', ['voucher_to_sell' => $not_used[0]->voucher, 'voucher_price' => $not_used[0]->price]);
-        }else{
-            return redirect()->back()->with('status', 'Sorry No Voucher Available');
-        }
+        // $not_used = Voucher::where('is_it_used', null)->where('price', $request->voucher_search)->get();
+        // if(isset($not_used[0])){
+        //     return view('dashboard', ['voucher_to_sell' => $not_used[0]->voucher, 'voucher_price' => $not_used[0]->price]);
+        // }else{
+        //     return redirect()->back()->with('status', 'Sorry No Voucher Available');
+        // }
+        echo $request->voucher_search;
         
     }
    
