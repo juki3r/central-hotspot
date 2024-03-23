@@ -27,19 +27,18 @@ class VoucherController extends Controller
     // for agent searching response
     public function search_voucher (Request $request)
     {
-        // if(Auth::user()->usertype != 'user'){
-        //     return redirect('dashboard');
-        // }
+        if(Auth::user()->usertype != 'agent'){
+            return redirect('dashboard');
+        }
         $request->validate([
             'voucher_search' => 'required'
         ]);
-        // $not_used = Voucher::where('is_it_used', null)->where('price', $request->voucher_search)->get();
-        // if(isset($not_used[0])){
-        //     return view('dashboard', ['voucher_to_sell' => $not_used[0]->voucher, 'voucher_price' => $not_used[0]->price]);
-        // }else{
-        //     return redirect()->back()->with('status', 'Sorry No Voucher Available');
-        // }
-        echo "hello";
+        $not_used = Voucher::where('is_it_used', null)->where('price', $request->voucher_search)->get();
+        if(isset($not_used[0])){
+            return view('dashboard', ['voucher_to_sell' => $not_used[0]->voucher, 'voucher_price' => $not_used[0]->price]);
+        }else{
+            return redirect()->back()->with('status', 'Sorry No Voucher Available');
+        }
         
     }
    
