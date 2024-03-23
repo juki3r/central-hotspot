@@ -111,14 +111,14 @@
                                     <table class="table table-bordered table-sm text-nowrap p-0 m-0">
                                         <tr>
                                             <th>Price</th>
-                                            <th>Voucher</th>
+                                            <th class="mx-2">Voucher</th>
                                         </tr>
                                         <tr>
                                             <td class="mt-2 p-3">&#8369; {{$voucher_price}} . 00</td>                                       
                                             <td class="p-2"><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
-                                    <x-primary-button class="mt-3" type="submit" onclick="confirm Proceed">Sell</x-primary-button>
+                                    <x-primary-button class="mt-3" type="submit"  onclick="return confirm('Nahatag mo na ang voucher sa customer?')">Sell</x-primary-button>
                                     <p class="mt-4">Palihog pa-picture sa customer iya voucher or ipasulat. Salamat.</p>
                                 </form>
                             </div>
