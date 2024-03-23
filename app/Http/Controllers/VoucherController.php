@@ -59,7 +59,7 @@ class VoucherController extends Controller
     //status agent
     public function status () 
     {
-        if(Auth::user()->usertype != 'user'){
+        if(Auth::user()->usertype != 'agent'){
             return redirect('dashboard');
         }
         //5 pesos
