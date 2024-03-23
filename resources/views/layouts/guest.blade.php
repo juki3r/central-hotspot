@@ -32,7 +32,7 @@
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 shadow-sm overflow-hidden sm:rounded-lg" style="background-color: gray">
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4 shadow-sm overflow-hidden sm:rounded-lg" style="background-color: rgb(82, 77, 77); color:black;">
                 {{ $slot }}
             </div>
         </div>
