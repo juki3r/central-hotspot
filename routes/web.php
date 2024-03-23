@@ -31,7 +31,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/import', [VoucherController::class, 'import'])->name('import.voucher');
 
     //Agent side
-    // Route::post('/search', [VoucherController::class, 'search_voucher'])->name('search.voucher');
+    Route::post('/search', [VoucherController::class, 'search_voucher'])->name('search.voucher');
     Route::post('/sell', [VoucherController::class, 'sell'])->name('sell');
 
     //Status Agent

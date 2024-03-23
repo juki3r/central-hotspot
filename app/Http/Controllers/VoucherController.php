@@ -27,9 +27,9 @@ class VoucherController extends Controller
     // for agent searching response
     public function search_voucher (Request $request)
     {
-        if(Auth::user()->usertype != 'user'){
-            return redirect('dashboard');
-        }
+        // if(Auth::user()->usertype != 'user'){
+        //     return redirect('dashboard');
+        // }
         $request->validate([
             'voucher_search' => 'required'
         ]);
