@@ -81,10 +81,10 @@
                         <label for="voucher_search">Enter price to search voucher :</label>
                         <select name="voucher_search" class="form-control" required>
                             <option value="">Select Price</option>
-                            <option value="5">5</option>
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="50">50</option>
+                            <option value="5">&#8369; 5 . 00</option>
+                            <option value="10">&#8369; 10 . 00</option>
+                            <option value="20">&#8369; 20 . 00</option>
+                            <option value="50">&#8369; 50 . 00</option>
                         </select>
                         <x-primary-button class="mt-3">GO</x-primary-button>
                     </form>
@@ -114,7 +114,7 @@
                                             <th>Voucher</th>
                                         </tr>
                                         <tr>
-                                            <td>{{$voucher_price}} pesos only !</td>                                       
+                                            <td>&#8369; {{$voucher_price}} . 00</td>                                       
                                             <td><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
