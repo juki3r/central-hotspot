@@ -25,7 +25,7 @@
         }
     </style>
     <body class="font-sans text-gray-900 antialiased ">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0" style="background-color: rgb(20, 18, 18) !important">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0" style="background-color: rgb(43, 42, 42) !important">
             <div>
                 <a href="/">
                     <img src="ajclogo.png" alt="logo" id="logo">
