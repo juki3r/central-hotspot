@@ -20,12 +20,12 @@
         }
         @media screen and (max-width:700px){
             #logo{
-                width: 180px;
+                width: 220px;
             }
         }
     </style>
-    <body class="font-sans text-gray-900 antialiased bg-dark">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+    <body class="font-sans text-gray-900 antialiased ">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-300">
             <div>
                 <a href="/">
                     <img src="ajclogo.png" alt="logo" id="logo">
