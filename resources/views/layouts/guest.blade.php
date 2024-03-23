@@ -16,11 +16,11 @@
     </head>
     <style>
         #logo{
-            width: 120px;
+            width: 300px;
         }
         @media screen and (max-width:700px){
             #logo{
-                width: 80px;
+                width: 150px;
             }
         }
     </style>
