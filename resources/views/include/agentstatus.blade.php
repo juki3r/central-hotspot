@@ -18,7 +18,7 @@
                         {{-- TOTAL SALES --}}
                         <div class="card shadow">
                             <div class="card-header">
-                                <h1>Total Sale</h1>
+                                <h1>Total Sales</h1>
                             </div>
                             <div class="card-body">
                                 &#8369; {{ $totalsale }} . 00
