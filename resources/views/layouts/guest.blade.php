@@ -25,14 +25,14 @@
         }
     </style>
     <body class="font-sans text-gray-900 antialiased ">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0" style="background-color: rgb(73, 64, 64) !important">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0" style="background-color: black !important">
             <div>
                 <a href="/">
                     <img src="ajclogo.png" alt="logo" id="logo">
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 bg-gray-900 py-4 shadow-sm overflow-hidden sm:rounded-lg">
+            <div class="w-full sm:max-w-md mt-6 px-6 bg-gray-100 py-4 shadow-sm overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
         </div>
