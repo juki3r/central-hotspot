@@ -119,7 +119,7 @@
                                         </tr>
                                     </table>
                                     <x-primary-button class="mt-3" type="submit">Sell</x-primary-button>
-                                    <p class="mt-4 text-danger">Palihog pa-picture sa customer iya voucher or ipasulat.</p>
+                                    <p class="mt-4 text-danger">Palihog pa-picture sa customer iya voucher or ipasulat. Salamat.</p>
                                 </form>
                             </div>
                         </div>
