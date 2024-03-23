@@ -118,7 +118,8 @@
                                             <td><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
-                                    <x-primary-button type="submit">Sell</x-primary-button>
+                                    <x-primary-button class="mt-3" type="submit">Sell</x-primary-button>
+                                    <p class="mt-2">Palihog pa-picture sa customer iya voucher or ipasulat.</p>
                                 </form>
                             </div>
                         </div>
