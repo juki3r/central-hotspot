@@ -15,9 +15,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <style>
-        body{
-            background-color: black;
-        }
         #logo{
             width: 330px;
         }
@@ -27,7 +24,7 @@
             }
         }
     </style>
-    <body class="font-sans text-gray-900 antialiased">
+    <body class="font-sans text-gray-900 antialiased bg-dark">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
