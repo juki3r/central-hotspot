@@ -53,7 +53,7 @@ class VoucherController extends Controller
             'sell_confirm' => 'required'
         ]);
         Voucher::where('voucher', $request->sell_confirm)->update(array('is_it_used' => 'used', 'sold_by' => $request->user()->name, 'sold_at' => date('M-d-Y')));
-        return redirect('dashboard')->with('status', 'Thank you agent');
+        return redirect('dashboard')->with('status', 'Sell complete, Thank you agent !');
     }
 
     //status agent
