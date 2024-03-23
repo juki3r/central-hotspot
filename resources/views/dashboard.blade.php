@@ -75,7 +75,7 @@
                     @if(session('status'))
                         <div class="alert alert-success">{{session('status')}}</div>
                     @endif
-                    <h1 class="fs-3 mb-5 text-primary" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
+                    <h1 class="fs-3 mb-5 text-primary" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}} - {{ Auth::user()->name}}</h1>
                     <form action="{{route('search.voucher')}}" method="post" class="mt-5">
                         @csrf
                         <label for="voucher_search">Enter price to search voucher :</label>
