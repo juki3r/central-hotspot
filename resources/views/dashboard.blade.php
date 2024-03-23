@@ -20,9 +20,8 @@
                             <x-primary-button class="">Import</x-primary-button>
                         </div>
                     </form>
-                    {{-- END Card --}}
-                            <div class="responsive-table">
-                                <table class="table table-bordered text-nowrap" id="sortTable">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-sm text-nowrap" id="sortTable">
                                     <thead class="fs-5">
                                         <td>Voucher</td>
                                         <td>Price</td>
