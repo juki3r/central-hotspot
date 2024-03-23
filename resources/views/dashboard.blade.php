@@ -76,17 +76,17 @@
                         <div class="alert alert-success">{{session('status')}}</div>
                     @endif
                     <h1 class="fs-4 mb-4" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
-                    <form action="{{route('search.voucher')}}" method="post">
+                    <form action="{{route('search.voucher')}}" method="post" class="mt-4">
                         @csrf
                         <label for="voucher_search">Enter price to search voucher :</label>
                         <select name="voucher_search" class="form-control" required>
-                            <option value="">Select Price</option>
+                            <option value="">Click here to select price</option>
                             <option value="5">&#8369; 5 . 00</option>
                             <option value="10">&#8369; 10 . 00</option>
                             <option value="20">&#8369; 20 . 00</option>
                             <option value="50">&#8369; 50 . 00</option>
                         </select>
-                        <x-primary-button class="mt-3">GO</x-primary-button>
+                        <x-primary-button class="mt-4">GO</x-primary-button>
                     </form>
                 </div>
             </div>
