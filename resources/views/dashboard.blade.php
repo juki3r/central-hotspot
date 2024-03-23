@@ -114,12 +114,12 @@
                                             <th>Voucher</th>
                                         </tr>
                                         <tr>
-                                            <td class="pt-2">&#8369; {{$voucher_price}} . 00</td>                                       
+                                            <td class="pt-3">&#8369; {{$voucher_price}} . 00</td>                                       
                                             <td><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
                                     <x-primary-button class="mt-3" type="submit">Sell</x-primary-button>
-                                    <p class="mt-2">Palihog pa-picture sa customer iya voucher or ipasulat.</p>
+                                    <p class="mt-4 text-danger">Palihog pa-picture sa customer iya voucher or ipasulat.</p>
                                 </form>
                             </div>
                         </div>
