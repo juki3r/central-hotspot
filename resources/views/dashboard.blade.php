@@ -72,8 +72,7 @@
             </div>
         </div>
     </div>
-    @else
-
+    @elseif(Auth::user()->usertype === 'agent')
     {{-- AGENTS --}}
     @if(isset($voucher_price))
     @else
@@ -84,7 +83,7 @@
                     @if(session('status'))
                         <div class="alert alert-success">{{session('status')}}</div>
                     @endif
-                    <h1 class="fs-4 mb-4">Hello, {{ Auth::user()->name}}</h1>
+                    <h1 class="fs-4 mb-4" style="text-transform: capitalized">Hello, {{ Auth::user()->usertype}}</h1>
                     <form action="{{route('search.voucher')}}" method="post">
                         @csrf
                         <label for="voucher_search">Enter price to search voucher :</label>
@@ -102,7 +101,6 @@
         </div>
     </div>
     @endif
-
     @if(isset($voucher_price))
     <div class="py-4">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -138,6 +136,17 @@
         </div>
     </div>
     @endif
+    @else
+    {{-- USER PAGE --}}
+    <div class="py-12 ">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    <h1 class="fs-4 mb-4">Hello, {{ Auth::user()->usertype}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     @endif
 
