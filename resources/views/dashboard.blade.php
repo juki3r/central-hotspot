@@ -12,7 +12,7 @@
                     @if(session('status'))
                                 <div class="alert alert-success">{{session('status')}}</div>
                             @endif
-                            <h1 class="fs-4 mb-4" style="text-transform: capitalized">Hello, {{ Auth::user()->usertype}}</h1>
+                            <h1 class="fs-4 mb-4" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
                     <form action="{{ route('import.voucher') }}" enctype="multipart/form-data" method="post" class="w-25" >
                         @csrf
                         <div class="input-group">
@@ -21,7 +21,7 @@
                         </div>
                     </form>
                             <div class="table-responsive">
-                                <table class="table table-bordered table-sm text-nowrap" id="sortTable">
+                                <table class="table table-bordered table-sm text-nowrap p-0 m-0" id="sortTable">
                                     <thead class="fs-5">
                                         <td>Voucher</td>
                                         <td>Price</td>
@@ -75,7 +75,7 @@
                     @if(session('status'))
                         <div class="alert alert-success">{{session('status')}}</div>
                     @endif
-                    <h1 class="fs-4 mb-4" style="text-transform: capitalized">Hello, {{ Auth::user()->usertype}}</h1>
+                    <h1 class="fs-4 mb-4" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
                     <form action="{{route('search.voucher')}}" method="post">
                         @csrf
                         <label for="voucher_search">Enter price to search voucher :</label>
@@ -134,7 +134,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <h1 class="fs-4 mb-4" style="text-transform: capitalized">Hello, {{ Auth::user()->usertype}}</h1>
+                    <h1 class="fs-4 mb-4" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
                 </div>
             </div>
         </div>
