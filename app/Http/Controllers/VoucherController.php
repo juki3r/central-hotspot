@@ -46,7 +46,7 @@ class VoucherController extends Controller
     //for agent sell proceed
     public function sell (Request $request) 
     {
-        if(Auth::user()->usertype != 'user'){
+        if(Auth::user()->usertype != 'agent'){
             return redirect('dashboard');
         }
         $request->validate([
