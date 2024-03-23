@@ -108,13 +108,13 @@
                             <div class="table-responsive">
                                 <form action="{{route('sell')}}" method="post">
                                     @csrf
-                                    <table class="table table-bordered table-sm text-nowrap">
+                                    <table class="table table-bordered table-sm text-nowrap p-0 m-0">
                                         <tr>
                                             <th>Price</th>
-                                            <th>Vouchers</th>
+                                            <th>Voucher</th>
                                         </tr>
                                         <tr>
-                                            <td>&#8369; {{$voucher_price}} . 00</td>                                       
+                                            <td class="p-2">&#8369; {{$voucher_price}} . 00</td>                                       
                                             <td><input type="text" name="sell_confirm" value="{{$voucher_to_sell}}" style="border: none" readonly></td>
                                         </tr>
                                     </table>
