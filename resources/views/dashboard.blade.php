@@ -75,8 +75,8 @@
                     @if(session('status'))
                         <div class="alert alert-success">{{session('status')}}</div>
                     @endif
-                    <h1 class="fs-4 mb-4" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
-                    <form action="{{route('search.voucher')}}" method="post" class="mt-4">
+                    <h1 class="fs-3 mb-5 text-primary" style="text-transform: Capitalize">Hello, {{ Auth::user()->usertype}}</h1>
+                    <form action="{{route('search.voucher')}}" method="post" class="mt-5">
                         @csrf
                         <label for="voucher_search">Enter price to search voucher :</label>
                         <select name="voucher_search" class="form-control" required>
@@ -86,7 +86,7 @@
                             <option value="20">&#8369; 20 . 00</option>
                             <option value="50">&#8369; 50 . 00</option>
                         </select>
-                        <x-primary-button class="mt-4">GO</x-primary-button>
+                        <x-primary-button class="mt-5">GO</x-primary-button>
                     </form>
                 </div>
             </div>
