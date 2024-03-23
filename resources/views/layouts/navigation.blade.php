@@ -17,12 +17,13 @@
                         </x-nav-link>
                     @if(Auth::user()->usertype == 'admin')
 
-                    {{-- USER DASHBOARD --}}
-                    @else 
+                    {{-- AGENT DASHBOARD --}}
+                    @elseif(Auth::user()->usertype == 'agent') 
                         <x-nav-link :href="route('status')" :active="request()->routeIs('status')">
                             {{ __('Status') }}
                         </x-nav-link>
-
+                    @else
+                        {{-- USER DASHBOARD --}}
                     @endif
                 </div>
             </div>
@@ -82,12 +83,13 @@
 
             @if(Auth::user()->usertype == 'admin')
 
-            {{-- USER DASHBOARD --}}
-            @else 
+            {{-- AGENT DASHBOARD --}}
+            @elseif(Auth::user()->usertype == 'agent')
             <x-responsive-nav-link :href="route('status')" :active="request()->routeIs('status')">
                 {{ __('Status') }}
             </x-responsive-nav-link>
-
+            @else
+            {{-- USER DASHBOARD --}}
             @endif
         </div>
 
