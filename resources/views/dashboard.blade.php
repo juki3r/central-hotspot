@@ -21,11 +21,6 @@
                         </div>
                     </form>
                     {{-- END Card --}}
-                    <div class="card shadow-sm mt-2">
-                        <div class="card-header">
-                            <h4 class="fs-1 mt-5">Vouchers</h4>
-                        </div>
-                        <div class="card-body">
                             <div class="responsive-table">
                                 <table class="table table-bordered text-nowrap" id="sortTable">
                                     <thead class="fs-5">
@@ -66,8 +61,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
