@@ -35,7 +35,7 @@
         }
         @media screen and (max-width:700px){
             #logo{
-                width: 90px;
+                width: 80px;
             }
         }
     </style>
