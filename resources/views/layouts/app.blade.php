@@ -29,6 +29,16 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+    <style>
+        #logo{
+            width: 120px;
+        }
+        @media screen and (max-width:700px){
+            #logo{
+                width: 80px;
+            }
+        }
+    </style>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
