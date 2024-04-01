@@ -14,9 +14,19 @@ class VoucherImport implements ToModel
     */
     public function model(array $row)
     {
-        return new Voucher([
-            'voucher'     => $row[0],
-            'price'    => $row[1], 
-        ]);
+        $voucher_same = Voucher::where('voucher',$row[0])->first();
+            if($voucher_same){
+                $voucher_same->update([
+                    'price'   => $row[1], 
+                ]);
+            }else{
+                Voucher::create([
+                    'voucher' => $row[0],
+                    'price'   => $row[1], 
+                ]);
+            }
+
+            
+     
     }
 }
