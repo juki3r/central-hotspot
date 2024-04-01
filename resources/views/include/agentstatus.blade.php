@@ -14,7 +14,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <div class="row">
-                        <div class="col col-md-6">
+                        <div class="col-12 col-md-6">
                         {{-- TOTAL SALES --}}
                         <div class="card shadow">
                             <div class="card-header">
@@ -26,7 +26,7 @@
                         </div>
                         </div>
                          {{-- TOTAL Commision --}}
-                        <div class="col col-md-6">
+                        <div class="col-12 col-md-6">
                             <div class="card shadow">
                                 <div class="card-header">
                                     <h1>Income</h1>
