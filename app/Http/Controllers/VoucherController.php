@@ -52,6 +52,7 @@ class VoucherController extends Controller
         $request->validate([
             'sell_confirm' => 'required'
         ]);
+        date_default_timezone_set('Asia/Manila');
         Voucher::where('voucher', $request->sell_confirm)->update(array('is_it_used' => 'used', 'sold_by' => $request->user()->name, 'sold_at' => date('M-d-Y H:i:s')));
         return redirect('dashboard')->with('status', 'Sell complete, Thank you agent !');
     }
