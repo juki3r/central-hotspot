@@ -26,7 +26,7 @@
                         </div>
                         </div>
                          {{-- TOTAL Commision --}}
-                        <div class="col-12 col-md-6 mt-sm-5">
+                        <div class="col-12 col-md-6 sm-mt-5">
                             <div class="card shadow">
                                 <div class="card-header">
                                     <h1>Income</h1>
