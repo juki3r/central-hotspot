@@ -21,7 +21,7 @@
                                     <td  class="p-1" style="font-size: 11px">
                                         @foreach($get_sales as $get_sales)
                                             @if($get_sales->sold_by == $active_agents->name)
-                                                {{count($get_sales->price)}}
+                                                {{$get_sales->price}}
                                             @endif
                                         @endforeach
                                     </td>
