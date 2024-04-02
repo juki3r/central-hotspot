@@ -98,7 +98,7 @@ class VoucherController extends Controller
             return redirect('dashboard');
         }
         $active_agents = User::where('usertype', 'agent')->get('name');
-        return $active_agents;
+        return view ('include.adminsales', ['active_agents' => $active_agents]);
 
     }
 }
