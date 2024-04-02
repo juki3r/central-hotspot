@@ -70,7 +70,7 @@ class VoucherController extends Controller
         $agentstatus_sell10 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 10)->get('price'))*10; // 12hours
         //20 pesos
         $agentstatus_sell20 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 20)->get('price'))*20; // 24hours
-        //30 pesos
+        //50 pesos
         $agentstatus_sell50 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 50)->get('price'))*50; // 3days
         // echo intval($agentstatus[0]->price).intval($agentstatus[1]->price);
         $totalsale = $agentstatus_sell5 + $agentstatus_sell10 + $agentstatus_sell20 + $agentstatus_sell50;
@@ -97,17 +97,9 @@ class VoucherController extends Controller
         if(Auth::user()->usertype != 'admin'){
             return redirect('dashboard');
         }
-        $active_agents = User::all();
-        
-        foreach($active_agents as $test){
-            $demo = $test->name;
-        }
-        return $active_agents;
-
-        // $get_sales = Voucher::where('sold_by', '!=', null)->get('sold_by');
-     
-        
-        // return view ('include.adminsales', ['active_agents' => $active_agents, 'get_sales' => $get_sales]);
+ 
+        $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50; // 3days
+        return $remia_sell50;
 
     }
 }
