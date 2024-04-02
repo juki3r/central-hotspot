@@ -74,6 +74,7 @@ class VoucherController extends Controller
         // echo intval($agentstatus[0]->price).intval($agentstatus[1]->price);
         $totalsale = $agentstatus_sell5 + $agentstatus_sell10 + $agentstatus_sell20 + $agentstatus_sell30;
         $agentincome = $totalsale * 0.4;
+        $adminincome = $totalsale - $agentincome;
         return view('include.agentstatus', ['totalsale' => $totalsale,'agentincome' => $agentincome]);
         
 
