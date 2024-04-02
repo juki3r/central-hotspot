@@ -36,6 +36,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     //Status Agent
     Route::get('/AgentStatus', [VoucherController::class, 'status'])->name('status');
+    Route::get('/AgentHistory', [VoucherController::class, 'history'])->name('history');
    
    
 });

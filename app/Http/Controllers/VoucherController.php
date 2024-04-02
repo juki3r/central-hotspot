@@ -79,4 +79,14 @@ class VoucherController extends Controller
         
 
     }
+
+    public function history ()
+    {
+        if(Auth::user()->usertype != 'agent'){
+            return redirect('dashboard');
+        }
+        $history = Voucher::where('sold_by', Auth::user()->name)->get();
+        return $history;
+
+    }
 }

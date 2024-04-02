@@ -22,6 +22,9 @@
                         <x-nav-link :href="route('status')" :active="request()->routeIs('status')">
                             {{ __('Status') }}
                         </x-nav-link>
+                        <x-nav-link :href="route('history')" :active="request()->routeIs('history')">
+                            {{ __('History') }}
+                        </x-nav-link>
                     @else
                         {{-- USER DASHBOARD --}}
                     @endif
@@ -87,6 +90,9 @@
             @elseif(Auth::user()->usertype == 'agent')
             <x-responsive-nav-link :href="route('status')" :active="request()->routeIs('status')">
                 {{ __('Status') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('history')" :active="request()->routeIs('history')">
+                {{ __('History') }}
             </x-responsive-nav-link>
             @else
             {{-- USER DASHBOARD --}}
