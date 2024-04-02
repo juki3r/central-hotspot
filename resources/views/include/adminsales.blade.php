@@ -15,13 +15,15 @@
                                 <td>Total Sales</td>
                             </thead>
                             <tbody>
-                                @foreach ([$active_agents as $active_agents, $get_sales as $get_sales])
+                                @foreach ($active_agents as $active_agents)
                                 <tr>
                                     <td  class="p-1" style="font-size: 11px">{{$active_agents->name}}</td>
                                     <td  class="p-1" style="font-size: 11px">
-                                        @if($get_sales->sold_by == $active_agents->name)
-                                            {{count($get_sales->price)}}
-                                        @endif
+                                        @foreach($get_sales as $get_sales)
+                                            @if($get_sales->sold_by == $active_agents->name)
+                                                {{count($get_sales->price)}}
+                                            @endif
+                                        @endforeach
                                     </td>
                                 </tr>
                                 @endforeach
