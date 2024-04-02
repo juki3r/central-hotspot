@@ -18,15 +18,20 @@
                             <tbody>
                                 @foreach ($active_agents as $active_agents)
                                 <tr>
-                                    <td  class="p-1" style="font-size: 11px">{{$active_agents->name}}</td>
-                                    <td  class="p-1" style="font-size: 11px">
+                                    <td  class="p-1" style="font-size: 12px">{{$active_agents->name}}</td>
+                                    <td  class="p-1" style="font-size: 12px">
                                         @if($active_agents->name=="Remia Arcenas")
                                             {{$remia_total}}
                                         @endif
                                     </td>
-                                    <td  class="p-1" style="font-size: 11px">
+                                    <td  class="p-1" style="font-size: 12px">
                                         @if($active_agents->name=="Remia Arcenas")
                                             {{$returnincome}}
+                                        @endif
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        @if($active_agents->name=="Remia Arcenas")
+                                            {{$remia_income}}
                                         @endif
                                     </td>
                                 </tr>

@@ -115,7 +115,8 @@ class VoucherController extends Controller
         return view('include.adminsales', [
             'active_agents' => $active_agents,
             'remia_total' => $remia_total,
-            'returnincome' => $returnincome
+            'returnincome' => $returnincome,
+            'remia_income' => $remia_income
 
         ]);
 
