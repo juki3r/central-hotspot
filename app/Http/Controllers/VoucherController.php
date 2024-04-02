@@ -97,7 +97,7 @@ class VoucherController extends Controller
         if(Auth::user()->usertype != 'admin'){
             return redirect('dashboard');
         }
-        $active_agents = User::where('usertype', 'agent');
+        $active_agents = User::where('usertype', 'agent')->get('name');
         return $active_agents;
 
     }
