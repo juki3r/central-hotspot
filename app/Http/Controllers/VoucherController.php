@@ -100,11 +100,12 @@ class VoucherController extends Controller
         $active_agents = User::where('usertype', 'agent')->get('name');
         foreach($active_agents as $active_agents){
             $active_agents_active = $active_agents->name;
+            return $active_agents_active;
         }
 
         // $get_sales = Voucher::where('sold_by', $active_agents->name)->get(); 
 
-        return $active_agents_active;
+        
         // return view ('include.adminsales', ['active_agents' => $active_agents, 'get_sales' => $get_sales]);
 
     }
