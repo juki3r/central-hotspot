@@ -101,7 +101,7 @@ class VoucherController extends Controller
         $active_agents = User::where('usertype', 'agent')->get('name');
 
         foreach($active_agents as $active_agents){
-            $name_of_agent = active_agents->name;
+            $name_of_agent = $active_agents->name;
             echo "$name_of_agent";
         }
 
