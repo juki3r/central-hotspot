@@ -20,9 +20,9 @@
                                     <td  class="p-1" style="font-size: 11px">{{$active_agents->name}}</td>
                                     <td  class="p-1" style="font-size: 11px">
                                         @foreach($get_sales as $get_sales)
-                                            @if($get_sales->sold_by == $active_agents->name)
+                                           
                                                 {{$get_sales->price}}
-                                            @endif
+                                            
                                         @endforeach
                                     </td>
                                 </tr>
