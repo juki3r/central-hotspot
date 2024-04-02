@@ -18,10 +18,11 @@
                                 @foreach ($active_agents as $active_agents)
                                 <tr>
                                     <td  class="p-1" style="font-size: 11px">{{$active_agents->name}}</td>
+                                    
                                     <td  class="p-1" style="font-size: 11px">
                                         @foreach($get_sales as $get_sales)
                                            
-                                                {{$get_sales->price}}
+                                                {{$get_sales}}
                                             
                                         @endforeach
                                     </td>
