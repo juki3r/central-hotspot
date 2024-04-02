@@ -102,13 +102,11 @@ class VoucherController extends Controller
 
         foreach($active_agents as $active_agents){
             $name_of_agent = $active_agents->name;
-            echo "$name_of_agent <br>";
         }
 
 
 
-        
-        // return view ('include.adminsales', ['active_agents' => $active_agents]);
+        return view ('include.adminsales', ['name_of_agent' => $name_of_agent]);
 
     }
 }
