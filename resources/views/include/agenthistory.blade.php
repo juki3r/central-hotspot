@@ -13,7 +13,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 sm:p-0 text-gray-900">
+                <div class="p-6 text-gray-900">
                     <div class="table-responsive">
                         <table class="table table-bordered table-sm text-nowrap p-0 m-0" id="sortTable">
                             <thead style="font-size: 14px; font-weight:bold">
