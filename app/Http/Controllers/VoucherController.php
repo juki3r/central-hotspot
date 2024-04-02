@@ -116,7 +116,7 @@ class VoucherController extends Controller
             'active_agents' => $active_agents,
             'remia_total' => $remia_total,
             'returnincome' => $returnincome,
-            'remia_income' => $remia_income
+            'remiaincome' => $remiaincome
 
         ]);
 

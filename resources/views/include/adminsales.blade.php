@@ -31,7 +31,7 @@
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
                                         @if($active_agents->name=="Remia Arcenas")
-                                            {{$remia_income}}
+                                            {{$remiaincome}}
                                         @endif
                                     </td>
                                 </tr>
