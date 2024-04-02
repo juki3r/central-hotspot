@@ -15,9 +15,9 @@
                                 <td>Total Sales</td>
                             </thead>
                             <tbody>
-                                @foreach ($name_of_agent as $name_of_agent)
+                                @foreach ($active_agents as $active_agents)
                                 <tr>
-                                    <td  class="p-1" style="font-size: 11px">{{$name_of_agent}}</td>
+                                    <td  class="p-1" style="font-size: 11px">{{$active_agents->name}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
