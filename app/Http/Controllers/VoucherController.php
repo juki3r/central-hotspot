@@ -98,11 +98,10 @@ class VoucherController extends Controller
             return redirect('dashboard');
         }
         $active_agents = User::where('usertype', 'agent')->get('name');
-        $test = Voucher::get();
-        return $test;
+        $get_sales = Voucher::get('sold_by');
 
-
-        // return view ('include.adminsales', ['active_agents' => $active_agents]);
+        return $get_sales;
+        // return view ('include.adminsales', ['active_agents' => $active_agents, 'get_sales' => $get_sales]);
 
     }
 }
