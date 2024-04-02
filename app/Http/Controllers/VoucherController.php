@@ -71,9 +71,9 @@ class VoucherController extends Controller
         //20 pesos
         $agentstatus_sell20 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 20)->get('price'))*20; // 24hours
         //30 pesos
-        $agentstatus_sell30 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 50)->get('price'))*50; // 3days
+        $agentstatus_sell50 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 50)->get('price'))*50; // 3days
         // echo intval($agentstatus[0]->price).intval($agentstatus[1]->price);
-        $totalsale = $agentstatus_sell5 + $agentstatus_sell10 + $agentstatus_sell20 + $agentstatus_sell30;
+        $totalsale = $agentstatus_sell5 + $agentstatus_sell10 + $agentstatus_sell20 + $agentstatus_sell50;
         $agentincome = $totalsale * 0.4;
         $adminincome = $totalsale - $agentincome;
         return view('include.agentstatus', ['totalsale' => $totalsale,'agentincome' => $agentincome, 'adminincome' => $adminincome]);
