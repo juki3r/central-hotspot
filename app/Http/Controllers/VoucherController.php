@@ -97,9 +97,20 @@ class VoucherController extends Controller
         if(Auth::user()->usertype != 'admin'){
             return redirect('dashboard');
         }
- 
-        $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50; // 3days
-        return $remia_sell50;
+
+        // Active Agents name
+        // Rona Africa / Bebet
+        // Remia Arcenas / Neneng
+
+        $remia_sell5 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 5)->get('price'))*5;
+        $remia_sell10 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 10)->get('price'))*10;
+        $remia_sell20 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 20)->get('price'))*20;
+        $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50;
+        $remia_total = $remia_sell5 + $remia_sell10 + $remia_sell20 + $remia_sell50;
+        $remiaincome = $remia_total * 0.4;
+        $returnincome = $remia_total - $remiaincome;
+
+        return $returnincome;
 
     }
 }
