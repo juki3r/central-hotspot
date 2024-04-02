@@ -14,6 +14,7 @@
                                 <td>Agents</td>
                                 <td>Total Sales</td>
                                 <td>Admin Income</td>
+                                <td>Agent Income</td>
                             </thead>
                             <tbody>
                                 @foreach ($active_agents as $active_agents)
