@@ -23,7 +23,7 @@
                             </thead>
                             <tbody>
                                 @foreach ($history as $history)
-                                <tr>
+                                <tr class="p-3">
                                     <td>{{$history->voucher}}</td>
                                     <td>{{$history->price}}</td>
                                     <td>{{$history->sold_at}}</td>
