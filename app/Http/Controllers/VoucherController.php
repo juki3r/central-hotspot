@@ -102,6 +102,7 @@ class VoucherController extends Controller
         // Rona Africa / Bebet
         // Remia Arcenas / Neneng
 
+        // Remia Arcenas
         $remia_sell5 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 5)->get('price'))*5;
         $remia_sell10 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 10)->get('price'))*10;
         $remia_sell20 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 20)->get('price'))*20;
@@ -110,7 +111,11 @@ class VoucherController extends Controller
         $remiaincome = $remia_total * 0.4;
         $returnincome = $remia_total - $remiaincome;
 
-        return $returnincome;
+        return view('include.adminsales', [
+            'remia_total' => $remia_total,
+            'returnincome' => $returnincome
+
+        ]);
 
     }
 }
