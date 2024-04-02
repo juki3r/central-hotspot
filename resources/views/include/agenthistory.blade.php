@@ -23,10 +23,10 @@
                             </thead>
                             <tbody>
                                 @foreach ($history as $history)
-                                <tr class="p-3">
-                                    <td>{{$history->voucher}}</td>
-                                    <td>{{$history->price}}</td>
-                                    <td>{{$history->sold_at}}</td>
+                                <tr>
+                                    <td  class="p-3">{{$history->voucher}}</td>
+                                    <td  class="p-3">{{$history->price}}</td>
+                                    <td  class="p-3">{{$history->sold_at}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
