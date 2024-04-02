@@ -19,7 +19,9 @@
                                 <tr>
                                     <td  class="p-1" style="font-size: 11px">{{$active_agents->name}}</td>
                                     <td  class="p-1" style="font-size: 11px">
-                                        
+                                        @if($get_sales->sold_by == $active_agents->name)
+                                            {{count($get_sales->price)}}
+                                        @endif
                                     </td>
                                 </tr>
                                 @endforeach
