@@ -79,7 +79,7 @@ class VoucherController extends Controller
         
 
     }
-
+    //agents sales history
     public function history ()
     {
         if(Auth::user()->usertype != 'agent'){
@@ -87,6 +87,17 @@ class VoucherController extends Controller
         }
         $history = Voucher::where('sold_by', Auth::user()->name)->get();
         return view('include.agenthistory', ['history' => $history]);
+
+    }
+
+    //Admin sales
+    public function sales ()
+    {
+        if(Auth::user()->usertype != 'admin'){
+            return redirect('dashboard');
+        }
+        $active_agents = User::where('usertype', 'agent');
+        return $active_agents;
 
     }
 }

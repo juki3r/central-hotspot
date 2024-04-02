@@ -16,7 +16,9 @@
                             {{ __('Dashboard') }}
                         </x-nav-link>
                     @if(Auth::user()->usertype == 'admin')
-
+                        <x-nav-link :href="route('sales')" :active="request()->routeIs('sales')">
+                            {{ __('Sales') }}
+                        </x-nav-link>
                     {{-- AGENT DASHBOARD --}}
                     @elseif(Auth::user()->usertype == 'agent') 
                         <x-nav-link :href="route('status')" :active="request()->routeIs('status')">
@@ -85,7 +87,9 @@
                 </x-responsive-nav-link>
 
             @if(Auth::user()->usertype == 'admin')
-
+            <x-responsive-nav-link :href="route('sales')" :active="request()->routeIs('sales')">
+                {{ __('Sales') }}
+            </x-responsive-nav-link>
             {{-- AGENT DASHBOARD --}}
             @elseif(Auth::user()->usertype == 'agent')
             <x-responsive-nav-link :href="route('status')" :active="request()->routeIs('status')">
