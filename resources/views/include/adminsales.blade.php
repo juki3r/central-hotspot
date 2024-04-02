@@ -22,17 +22,17 @@
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
                                         @if($active_agents->name=="Remia Arcenas")
-                                            {{$remia_total}}
+                                        &#8369; {{$remia_total}} . 00
                                         @endif
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
                                         @if($active_agents->name=="Remia Arcenas")
-                                            {{$returnincome}}
+                                        &#8369; {{$returnincome}} .00
                                         @endif
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
                                         @if($active_agents->name=="Remia Arcenas")
-                                            {{$remiaincome}}
+                                        &#8369; {{$remiaincome}} .00
                                         @endif
                                     </td>
                                 </tr>
