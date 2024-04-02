@@ -13,6 +13,7 @@
                             <thead style="font-size: 14px; font-weight:bold">
                                 <td>Agents</td>
                                 <td>Total Sales</td>
+                                <td>Admin Income</td>
                             </thead>
                             <tbody>
                                 @foreach ($active_agents as $active_agents)
@@ -21,6 +22,11 @@
                                     <td  class="p-1" style="font-size: 11px">
                                         @if($active_agents->name=="Remia Arcenas")
                                             {{$remia_total}}
+                                        @endif
+                                    </td>
+                                    <td  class="p-1" style="font-size: 11px">
+                                        @if($active_agents->name=="Remia Arcenas")
+                                            {{$returnincome}}
                                         @endif
                                     </td>
                                 </tr>
