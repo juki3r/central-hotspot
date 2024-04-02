@@ -86,7 +86,7 @@ class VoucherController extends Controller
             return redirect('dashboard');
         }
         $history = Voucher::where('sold_by', Auth::user()->name)->get();
-        return $history;
+        return gettype($history);
 
     }
 }
