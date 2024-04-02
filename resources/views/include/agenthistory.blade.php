@@ -16,7 +16,7 @@
                 <div class="p-6 text-gray-900">
                     <div class="table-responsive">
                         <table class="table table-bordered table-sm text-nowrap p-0 m-0" id="sortTable">
-                            <thead class="fs-5">
+                            <thead style="font-size: 14px; font-weight:bold">
                                 <td>Vouchers</td>
                                 <td>Price</td>
                                 <td>Sold at</td>
@@ -24,9 +24,9 @@
                             <tbody>
                                 @foreach ($history as $history)
                                 <tr>
-                                    <td  class="p-1" style="font-size: 10px">{{$history->voucher}}</td>
-                                    <td  class="p-1" style="font-size: 10px; width:10px">{{$history->price}}</td>
-                                    <td  class="p-1" style="font-size: 10px">{{$history->sold_at}}</td>
+                                    <td  class="p-1" style="font-size: 11px">{{$history->voucher}}</td>
+                                    <td  class="p-1" style="font-size: 11px">{{$history->price}}</td>
+                                    <td  class="p-1" style="font-size: 11px">{{$history->sold_at}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
