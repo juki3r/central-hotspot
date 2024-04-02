@@ -24,9 +24,9 @@
                             <tbody>
                                 @foreach ($history as $history)
                                 <tr>
-                                    <td  class="p-3">{{$history->voucher}}</td>
-                                    <td  class="p-3">{{$history->price}}</td>
-                                    <td  class="p-3">{{$history->sold_at}}</td>
+                                    <td  class="p-1" style="font-size: 10px">{{$history->voucher}}</td>
+                                    <td  class="p-1" style="font-size: 10px">{{$history->price}}</td>
+                                    <td  class="p-1" style="font-size: 10px">{{$history->sold_at}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
