@@ -102,7 +102,7 @@ class VoucherController extends Controller
 
         foreach($active_agents as $active_agents){
             $name_of_agent = $active_agents->name;
-            echo "$name_of_agent";
+            echo "$name_of_agent <br>";
         }
 
 
