@@ -65,13 +65,13 @@ class VoucherController extends Controller
             return redirect('dashboard');
         }
         //5 pesos
-        $agentstatus_sell5 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 5)->get('price'))*5; // 4hours
+        $agentstatus_sell5 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 5)->get('price'))*5; // 6hours
         //10 pesos
-        $agentstatus_sell10 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 10)->get('price'))*10; // 8hours
+        $agentstatus_sell10 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 10)->get('price'))*10; // 12hours
         //20 pesos
-        $agentstatus_sell20 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 20)->get('price'))*20; // 16hours
+        $agentstatus_sell20 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 20)->get('price'))*20; // 24hours
         //30 pesos
-        $agentstatus_sell30 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 30)->get('price'))*30; // 24hours
+        $agentstatus_sell30 = count(Voucher::where('sold_by', Auth::user()->name)->where('price' , 50)->get('price'))*50; // 3days
         // echo intval($agentstatus[0]->price).intval($agentstatus[1]->price);
         $totalsale = $agentstatus_sell5 + $agentstatus_sell10 + $agentstatus_sell20 + $agentstatus_sell30;
         $agentincome = $totalsale * 0.4;
