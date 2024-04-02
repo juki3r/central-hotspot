@@ -25,7 +25,7 @@
                                 @foreach ($history as $history)
                                 <tr>
                                     <td  class="p-1" style="font-size: 10px">{{$history->voucher}}</td>
-                                    <td  class="p-1" style="font-size: 10px">{{$history->price}}</td>
+                                    <td  class="p-1" style="font-size: 10px; width:20px">{{$history->price}}</td>
                                     <td  class="p-1" style="font-size: 10px">{{$history->sold_at}}</td>
                                 </tr>
                                 @endforeach
