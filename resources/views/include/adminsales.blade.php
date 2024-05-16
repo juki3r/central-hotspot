@@ -68,7 +68,11 @@
                             </tbody>
                         </table>
                     </div>
-                    <button type="button" class="btn btn-danger">Reset sales</button>
+                    <div class="row text-center">
+                        <div class="col m-auto">
+                            <button type="button" class="btn btn-danger text-dark">Reset sales</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
