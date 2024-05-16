@@ -70,7 +70,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col m-auto">
-                            <button type="button" class="btn btn-danger text-dark">Reset sales</button>
+                            <button type="button" class="btn btn-danger bg-danger text-light mt-4">Reset sales</button>
                         </div>
                     </div>
                 </div>
