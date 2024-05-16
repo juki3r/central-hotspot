@@ -22,6 +22,9 @@
                                     <td  class="p-1" style="font-size: 12px">
                                         {{$remia_total}}
                                     </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$remiaincome}}
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
