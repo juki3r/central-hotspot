@@ -28,6 +28,9 @@
                                     <td  class="p-1" style="font-size: 12px">
                                         {{$remiareturnincome}}
                                     </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        <a href="/resetsale/$active_agents[0]->name">Reset</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents[1]->name}}</td>
@@ -69,6 +72,9 @@
                         </table>
                     </div>
                     <div class="row text-center">
+                        <div class="col m-auto">
+                            {{$adminsells}}
+                        </div>
                         <div class="col m-auto">
                             <button type="button" class="btn btn-danger bg-danger text-light mt-4">Reset sales</button>
                         </div>

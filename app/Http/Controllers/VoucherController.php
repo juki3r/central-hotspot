@@ -138,6 +138,10 @@ class VoucherController extends Controller
         $jeanincome = $jean_total * 0.4;
         $jeanreturnincome = $jean_total - $jeanincome;
 
+        //TOTAL INCOME ADMIN
+
+        $adminsells = $ronareturnincome + $cindyreturnincome + $jeanreturnincome;
+
         return view('include.adminsales', [
             'active_agents' => $active_agents,
             'remia_total' => $remia_total,
@@ -152,6 +156,7 @@ class VoucherController extends Controller
             'jean_total' => $jean_total,
             'jeanincome' => $jeanincome,
             'jeanreturnincome' => $jeanreturnincome,
+            'adminsells' => $adminsells,
         ]);
 
     }

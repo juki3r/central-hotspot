@@ -40,6 +40,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     //Admin sales
     Route::get('/adminsales', [VoucherController::class, 'sales'])->name('sales');
+
+    //Reset sales
+    Route::get('/resetsale/{active_agents[0]->name}', [VoucherController::class, 'resetsale'])->name('resetsale');
    
    
 });
