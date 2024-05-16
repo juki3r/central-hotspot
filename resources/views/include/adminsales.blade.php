@@ -23,7 +23,6 @@
                                         {{$remia_total}}
                                     </td>
                                 </tr>
-                                @endforeach
                             </tbody>
                         </table>
                     </div>
