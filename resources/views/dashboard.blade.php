@@ -85,6 +85,7 @@
                             <option value="10">&#8369; 10 . 00</option>
                             <option value="20">&#8369; 20 . 00</option>
                             <option value="50">&#8369; 50 . 00</option>
+                            <option value="50">&#8369; 350 . 00</option>
                         </select>
                         <x-primary-button class="mt-5">GO</x-primary-button>
                     </form>
