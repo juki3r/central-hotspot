@@ -98,7 +98,7 @@ class VoucherController extends Controller
             return redirect('dashboard');
         }
 
-        $active_agents = User::where('usertype', 'agent')->get('name');
+        $active_agents = User::where('usertype', 'agent')->get();
         // // Active Agents name
         // // Rona Africa / Bebet
         // // Remia Arcenas / Neneng
