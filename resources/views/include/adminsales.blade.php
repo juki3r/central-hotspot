@@ -26,7 +26,19 @@
                                         {{$remiaincome}}
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$returnincome}}
+                                        {{$remiareturnincome}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[1]->name}}</td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$rona_total}}
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$ronaincome}}
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$ronareturnincome}}
                                     </td>
                                 </tr>
                             </tbody>

@@ -109,13 +109,25 @@ class VoucherController extends Controller
         $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50;
         $remia_total = $remia_sell5 + $remia_sell10 + $remia_sell20 + $remia_sell50;
         $remiaincome = $remia_total * 0.4;
-        $returnincome = $remia_total - $remiaincome;
+        $remiareturnincome = $remia_total - $remiaincome;
+
+        // Rona Africa
+        $rona_sell5 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 5)->get('price'))*5;
+        $rona_sell10 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 10)->get('price'))*10;
+        $rona_sell20 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 20)->get('price'))*20;
+        $rona_sell50 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 50)->get('price'))*50;
+        $rona_total = $rona_sell5 + $rona_sell10 + $rona_sell20 + $rona_sell50;
+        $ronaincome = $rona_total * 0.4;
+        $ronareturnincome = $rona_total - $ronaincome;
 
         return view('include.adminsales', [
             'active_agents' => $active_agents,
             'remia_total' => $remia_total,
             'remiaincome' => $remiaincome,
-            'returnincome' => $returnincome,
+            'remiareturnincome' => $remiareturnincome,
+            'rona_total' => $rona_total,
+            'ronaincome' => $ronaincome,
+            'ronareturnincome' => $ronareturnincome,
         ]);
 
     }
