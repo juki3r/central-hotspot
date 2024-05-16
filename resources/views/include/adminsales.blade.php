@@ -13,8 +13,8 @@
                             <thead style="font-size: 14px; font-weight:bold">
                                 <td>Agents</td>
                                 <td>Total Sales</td>
-                                <td>Admin Income</td>
                                 <td>Agent Income</td>
+                                <td>Admin Income</td>
                             </thead>
                             <tbody>
                                 <tr>
