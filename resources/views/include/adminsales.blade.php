@@ -21,7 +21,7 @@
                                 <tr>
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
-                                      data
+                                        {{$remia_total}}
                                     </td>
                                 </tr>
                                 @endforeach
