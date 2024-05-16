@@ -68,6 +68,7 @@
                             </tbody>
                         </table>
                     </div>
+                    <button type="button" class="btn btn-danger">Reset sales</button>
                 </div>
             </div>
         </div>
