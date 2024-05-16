@@ -120,6 +120,24 @@ class VoucherController extends Controller
         $ronaincome = $rona_total * 0.4;
         $ronareturnincome = $rona_total - $ronaincome;
 
+        // Cindy Buhayan
+        $cindy_sell5 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 5)->get('price'))*5;
+        $cindy_sell10 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 10)->get('price'))*10;
+        $cindy_sell20 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 20)->get('price'))*20;
+        $cindy_sell50 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 50)->get('price'))*50;
+        $cindy_total = $cindy_sell5 + $cindy_sell10 + $cindy_sell20 + $cindy_sell50;
+        $cindyincome = $cindy_total * 0.4;
+        $cindyreturnincome = $cindy_total - $cindyincome;
+
+        // Jean Cayetano
+        $jean_sell5 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 5)->get('price'))*5;
+        $jean_sell10 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 10)->get('price'))*10;
+        $jean_sell20 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 20)->get('price'))*20;
+        $jean_sell50 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 50)->get('price'))*50;
+        $jean_total = $jean_sell5 + $jean_sell10 + $jean_sell20 + $jean_sell50;
+        $jeanincome = $jean_total * 0.4;
+        $jeanreturnincome = $jean_total - $jeanincome;
+
         return view('include.adminsales', [
             'active_agents' => $active_agents,
             'remia_total' => $remia_total,
@@ -128,6 +146,12 @@ class VoucherController extends Controller
             'rona_total' => $rona_total,
             'ronaincome' => $ronaincome,
             'ronareturnincome' => $ronareturnincome,
+            'cindy_total' => $cindy_total,
+            'cindyincome' => $cindyincome,
+            'cindyreturnincome' => $cindyreturnincome,
+            'jean_total' => $jean_total,
+            'jeanincome' => $jeanincome,
+            'jeanreturnincome' => $jeanreturnincome,
         ]);
 
     }

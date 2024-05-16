@@ -41,6 +41,30 @@
                                         {{$ronareturnincome}}
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[2]->name}}</td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$cindy_total}}
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$cindyincome}}
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$cindyreturnincome}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[3]->name}}</td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$jean_total}}
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$jeanincome}}
+                                    </td>
+                                    <td  class="p-1" style="font-size: 12px">
+                                        {{$jeanreturnincome}}
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
