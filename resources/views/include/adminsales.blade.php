@@ -17,9 +17,8 @@
                                 <td>Agent Income</td>
                             </thead>
                             <tbody>
-                                @foreach ($active_agents as $active_agents)
                                 <tr>
-                                    <td  class="p-1" style="font-size: 12px">{{$active_agents->name}}</td>
+                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[0]->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
                                         {{$remia_total}}
                                     </td>
