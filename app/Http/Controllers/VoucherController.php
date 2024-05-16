@@ -99,26 +99,27 @@ class VoucherController extends Controller
         }
 
         $active_agents = User::where('usertype', 'agent')->get('name');
-        // Active Agents name
-        // Rona Africa / Bebet
-        // Remia Arcenas / Neneng
+        // // Active Agents name
+        // // Rona Africa / Bebet
+        // // Remia Arcenas / Neneng
 
-        // Remia Arcenas
-        $remia_sell5 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 5)->get('price'))*5;
-        $remia_sell10 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 10)->get('price'))*10;
-        $remia_sell20 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 20)->get('price'))*20;
-        $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50;
-        $remia_total = $remia_sell5 + $remia_sell10 + $remia_sell20 + $remia_sell50;
-        $remiaincome = $remia_total * 0.4;
-        $returnincome = $remia_total - $remiaincome;
+        // // Remia Arcenas
+        // $remia_sell5 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 5)->get('price'))*5;
+        // $remia_sell10 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 10)->get('price'))*10;
+        // $remia_sell20 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 20)->get('price'))*20;
+        // $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50;
+        // $remia_total = $remia_sell5 + $remia_sell10 + $remia_sell20 + $remia_sell50;
+        // $remiaincome = $remia_total * 0.4;
+        // $returnincome = $remia_total - $remiaincome;
 
-        return view('include.adminsales', [
-            'active_agents' => $active_agents,
-            'remia_total' => $remia_total,
-            'returnincome' => $returnincome,
-            'remiaincome' => $remiaincome
+        // return view('include.adminsales', [
+        //     'active_agents' => $active_agents,
+        //     'remia_total' => $remia_total,
+        //     'returnincome' => $returnincome,
+        //     'remiaincome' => $remiaincome
 
-        ]);
+        // ]);
+        echo $active_agents;
 
     }
 }
