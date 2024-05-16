@@ -20,40 +20,37 @@
                                 <tr>
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents[0]->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$remia_total}}
+                                        &#8369; {{$remia_total}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
                                         {{$remiaincome}}
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$remiareturnincome}}
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        <a href="/resetsale/$active_agents[0]->name">Reset</a>
+                                        &#8369; {{$remiareturnincome}} .00
                                     </td>
                                 </tr>
                                 <tr>
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents[1]->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$rona_total}}
+                                        &#8369; {{$rona_total}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$ronaincome}}
+                                        &#8369; {{$ronaincome}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$ronareturnincome}}
+                                        &#8369; {{$ronareturnincome}} .00
                                     </td>
                                 </tr>
                                 <tr>
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents[2]->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$cindy_total}}
+                                        &#8369; {{$cindy_total}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$cindyincome}}
+                                        &#8369; {{$cindyincome}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$cindyreturnincome}}
+                                        &#8369; {{$cindyreturnincome}} .00
                                     </td>
                                 </tr>
                                 <tr>
@@ -62,10 +59,10 @@
                                         {{$jean_total}}
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$jeanincome}}
+                                        &#8369; {{$jeanincome}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$jeanreturnincome}}
+                                        &#8369; {{$jeanreturnincome}} .00
                                     </td>
                                 </tr>
                             </tbody>
@@ -73,10 +70,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col m-auto">
-                            {{$adminsells}}
-                        </div>
-                        <div class="col m-auto">
-                            <button type="button" class="btn btn-danger bg-danger text-light mt-4">Reset sales</button>
+                            &#8369; {{$adminsells}} .00
                         </div>
                     </div>
                 </div>
