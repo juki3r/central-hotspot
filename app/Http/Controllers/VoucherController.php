@@ -99,9 +99,7 @@ class VoucherController extends Controller
         }
 
         $active_agents = User::where('usertype', 'agent')->get('name');
-        // // Active Agents name
-        // // Rona Africa / Bebet
-        // // Remia Arcenas / Neneng
+     
 
         // // Remia Arcenas
         // $remia_sell5 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 5)->get('price'))*5;
@@ -112,14 +110,9 @@ class VoucherController extends Controller
         // $remiaincome = $remia_total * 0.4;
         // $returnincome = $remia_total - $remiaincome;
 
-        // return view('include.adminsales', [
-        //     'active_agents' => $active_agents,
-        //     'remia_total' => $remia_total,
-        //     'returnincome' => $returnincome,
-        //     'remiaincome' => $remiaincome
-
-        // ]);
-        echo $active_agents[1]->name;
+        return view('include.adminsales', [
+            'active_agents' => $active_agents
+        ]);
 
     }
 }
