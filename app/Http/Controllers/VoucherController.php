@@ -113,7 +113,7 @@ class VoucherController extends Controller
         //TOTAL INCOME ADMIN
         // Add if there is additional agent
 
-        $adminsells = $Juki3rreturnincome;
+        $adminsells = $juki3rreturnincome;
 
         return view('include.adminsales', [
             'active_agents' => $active_agents,
