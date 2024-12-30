@@ -102,13 +102,13 @@ class VoucherController extends Controller
         
 
         // Juki3r
-        $Juki3r_sell5 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 5)->get('price'))*5;
-        $Juki3r_sell10 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 10)->get('price'))*10;
-        $Juki3r_sell20 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 20)->get('price'))*20;
-        $Juki3r_sell50 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 50)->get('price'))*50;
-        $Juki3r_total = $Juki3r_sell5 + $Juki3r_sell10 + $Juki3r_sell20 + $Juki3r_sell50;
-        $Juki3rincome = $Juki3r_total * 0.4;
-        $Juki3rreturnincome = $Juki3r_total - $Juki3rincome;
+        $juki3r_sell5 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 5)->get('price'))*5;
+        $juki3r_sell10 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 10)->get('price'))*10;
+        $juki3r_sell20 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 20)->get('price'))*20;
+        $juki3r_sell50 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 50)->get('price'))*50;
+        $juki3r_total = $juki3r_sell5 + $juki3r_sell10 + $juki3r_sell20 + $juki3r_sell50;
+        $juki3rincome = $juki3r_total * 0.4;
+        $juki3rreturnincome = $juki3r_total - $juki3rincome;
 
         //TOTAL INCOME ADMIN
         // Add if there is additional agent
