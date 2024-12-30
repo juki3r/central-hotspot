@@ -20,49 +20,13 @@
                                 <tr>
                                     <td  class="p-1" style="font-size: 12px">{{$active_agents[0]->name}}</td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$remia_total}} .00
+                                        &#8369; {{$juki3r_total}} .00
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        {{$remiaincome}}
+                                        {{$juki3rincome}}
                                     </td>
                                     <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$remiareturnincome}} .00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[1]->name}}</td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$rona_total}} .00
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$ronaincome}} .00
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$ronareturnincome}} .00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[2]->name}}</td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$cindy_total}} .00
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$cindyincome}} .00
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$cindyreturnincome}} .00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td  class="p-1" style="font-size: 12px">{{$active_agents[3]->name}}</td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        {{$jean_total}}
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$jeanincome}} .00
-                                    </td>
-                                    <td  class="p-1" style="font-size: 12px">
-                                        &#8369; {{$jeanreturnincome}} .00
+                                        &#8369; {{$juki3rreturnincome}} .00
                                     </td>
                                 </tr>
                             </tbody>

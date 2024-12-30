@@ -100,62 +100,26 @@ class VoucherController extends Controller
 
         $active_agents = User::where('usertype', 'agent')->get('name');
         
-     
 
-        // Remia Arcenas
-        $remia_sell5 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 5)->get('price'))*5;
-        $remia_sell10 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 10)->get('price'))*10;
-        $remia_sell20 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 20)->get('price'))*20;
-        $remia_sell50 = count(Voucher::where('sold_by', 'Remia Arcenas')->where('price' , 50)->get('price'))*50;
-        $remia_total = $remia_sell5 + $remia_sell10 + $remia_sell20 + $remia_sell50;
-        $remiaincome = $remia_total * 0.4;
-        $remiareturnincome = $remia_total - $remiaincome;
-
-        // Rona Africa
-        $rona_sell5 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 5)->get('price'))*5;
-        $rona_sell10 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 10)->get('price'))*10;
-        $rona_sell20 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 20)->get('price'))*20;
-        $rona_sell50 = count(Voucher::where('sold_by', 'Rona Africa')->where('price' , 50)->get('price'))*50;
-        $rona_total = $rona_sell5 + $rona_sell10 + $rona_sell20 + $rona_sell50;
-        $ronaincome = $rona_total * 0.4;
-        $ronareturnincome = $rona_total - $ronaincome;
-
-        // Cindy Buhayan
-        $cindy_sell5 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 5)->get('price'))*5;
-        $cindy_sell10 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 10)->get('price'))*10;
-        $cindy_sell20 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 20)->get('price'))*20;
-        $cindy_sell50 = count(Voucher::where('sold_by', 'Cindy Buhayan')->where('price' , 50)->get('price'))*50;
-        $cindy_total = $cindy_sell5 + $cindy_sell10 + $cindy_sell20 + $cindy_sell50;
-        $cindyincome = $cindy_total * 0.4;
-        $cindyreturnincome = $cindy_total - $cindyincome;
-
-        // Jean Cayetano
-        $jean_sell5 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 5)->get('price'))*5;
-        $jean_sell10 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 10)->get('price'))*10;
-        $jean_sell20 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 20)->get('price'))*20;
-        $jean_sell50 = count(Voucher::where('sold_by', 'Jean Cayetano')->where('price' , 50)->get('price'))*50;
-        $jean_total = $jean_sell5 + $jean_sell10 + $jean_sell20 + $jean_sell50;
-        $jeanincome = $jean_total * 0.4;
-        $jeanreturnincome = $jean_total - $jeanincome;
+        // Juki3r
+        $Juki3r_sell5 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 5)->get('price'))*5;
+        $Juki3r_sell10 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 10)->get('price'))*10;
+        $Juki3r_sell20 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 20)->get('price'))*20;
+        $Juki3r_sell50 = count(Voucher::where('sold_by', 'Juki3r')->where('price' , 50)->get('price'))*50;
+        $Juki3r_total = $Juki3r_sell5 + $Juki3r_sell10 + $Juki3r_sell20 + $Juki3r_sell50;
+        $Juki3rincome = $Juki3r_total * 0.4;
+        $Juki3rreturnincome = $Juki3r_total - $Juki3rincome;
 
         //TOTAL INCOME ADMIN
+        // Add if there is additional agent
 
-        $adminsells = $ronareturnincome + $cindyreturnincome + $jeanreturnincome;
+        $adminsells = $Juki3rreturnincome;
 
         return view('include.adminsales', [
             'active_agents' => $active_agents,
-            'remia_total' => $remia_total,
-            'remiaincome' => $remiaincome,
-            'remiareturnincome' => $remiareturnincome,
-            'rona_total' => $rona_total,
-            'ronaincome' => $ronaincome,
-            'ronareturnincome' => $ronareturnincome,
-            'cindy_total' => $cindy_total,
-            'cindyincome' => $cindyincome,
-            'cindyreturnincome' => $cindyreturnincome,
-            'jean_total' => $jean_total,
-            'jeanincome' => $jeanincome,
-            'jeanreturnincome' => $jeanreturnincome,
+            'juki3r_total' => $juki3r_total,
+            'juki3rincome' => $juki3rincome,
+            'juki3rreturnincome' => $juki3rreturnincome,
             'adminsells' => $adminsells,
         ]);
 
