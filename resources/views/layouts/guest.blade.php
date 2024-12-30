@@ -33,7 +33,7 @@
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 bg-gray-100 py-4 shadow-sm overflow-hidden sm:rounded-lg border-rounded">
+            <div class="w-full sm:max-w-md mt-6 px-6 bg-gray-100 py-4 shadow-sm overflow-hidden sm:rounded-lg" style="border-radius: 5px !important;">
                 {{ $slot }}
             </div>
         </div>
